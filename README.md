@@ -1,6 +1,6 @@
 # Memories
 
-![Memories](https://drive.google.com/file/d/14lVPGYbxxtsU5JbVxOe1WtKaMkJgQZ1i/view?usp=sharing)
+![Memories](https://drive.google.com/file/d/14lVPGYbxxtsU5JbVxOe1WtKaMkJgQZ1i)
 
 ## Introduction
 
