@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({baseURL:'https://express-memories.herokuapp.com'})
+const API = axios.create({baseURL:'https://create-a-memory.onrender.com'})
 // const url='https://express-memories.herokuapp.com/posts';
 
 
