@@ -6,7 +6,8 @@ import {
   LIKE,
 } from "../constants/actionTypes";
 
-export const posts = (posts = [], action) => {
+// Assign the arrow function to a constant first
+const posts = (posts = [], action) => {
   switch (action.type) {
     case FETCH_ALL:
       return action.payload;
@@ -26,3 +27,6 @@ export const posts = (posts = [], action) => {
       return posts;
   }
 };
+
+// Then export the variable as default
+export default posts;
