@@ -88,6 +88,7 @@ const SignUp = () => {
             onSuccess={googleSuccess}
             onFailure={googleError}
             cookiePolicy="single_host_origin"
+            redirectUri="https://create-a-memory.netlify.app"
           />
           <Grid container justifyContent="flex-end">
             <Grid item>
