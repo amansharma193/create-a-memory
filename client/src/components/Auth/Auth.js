@@ -52,10 +52,8 @@ const SignUp = () => {
   };
 
   const googleSuccess = async (res) => {
-    console.log("res -> ", JSON.stringify(res));
-    const result = await res?.profileObj;
-    const token = await res?.tokenId;
-    console.log("aman shre ", result, token);
+    const result = await res?.select_by;
+    const token = await res?.credential;
 
     try {
       dispatch({ type: AUTH, data: { result, token } });
