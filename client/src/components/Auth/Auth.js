@@ -52,8 +52,9 @@ const SignUp = () => {
   };
 
   const googleSuccess = async (res) => {
-    const result = res?.profileObj;
-    const token = res?.tokenId;
+    console.log("res -> ", JSON.stringify(res);
+    const result = await res?.profileObj;
+    const token = await res?.tokenId;
     console.log("aman shre ", result, token);
 
     try {
