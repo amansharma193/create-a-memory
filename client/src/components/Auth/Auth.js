@@ -16,6 +16,8 @@ import { signin, signup } from "../../actions/auth";
 import { AUTH } from "../../constants/actionTypes";
 import useStyles from "./styles";
 import Input from "./Input";
+import jwtDecode from 'jwt-decode';
+
 
 const initialState = {
   firstName: "",
@@ -52,9 +54,9 @@ const SignUp = () => {
   };
 
   const googleSuccess = async (res) => {
-    const result = await res?.select_by;
     const token = await res?.credential;
-
+    const decodedTokenData = await jwtDecode(token);
+    const result = await decodedTokenData;
     try {
       dispatch({ type: AUTH, data: { result, token } });
 
